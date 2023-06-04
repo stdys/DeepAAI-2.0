@@ -1,4 +1,4 @@
-## DeepAAI 2.0: an attentional fusion module is added to improve DeepAAI's performance
+## DeepAAI 2.0
 
 ### The performances of neutralization and non-neutralization classification on the unseen Abs of HIV
 
