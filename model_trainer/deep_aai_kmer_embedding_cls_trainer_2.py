@@ -37,16 +37,16 @@ class Trainer(object):
         self.loss_op = nn.BCELoss()
         self.build_model()
 
-        self.dataset.train_index = np.load(osp.join(current_path, 'dataset/corpus/cls/seed/', 'seed_{}_train_seen_index.npy'.format(
+        self.dataset.train_index = np.load(osp.join(current_path, '..', 'dataset/corpus/cls/seed/', 'seed_{}_train_seen_index.npy'.format(
             self.param_dict['seed']
         )))
-        self.dataset.valid_seen_index = np.load(osp.join(current_path, 'dataset/corpus/cls/seed/', 'seed_{}_valid_seen_index.npy'.format(
+        self.dataset.valid_seen_index = np.load(osp.join(current_path, '..', 'dataset/corpus/cls/seed/', 'seed_{}_valid_seen_index.npy'.format(
             self.param_dict['seed']
         )))
-        self.dataset.test_seen_index = np.load(osp.join(current_path, 'dataset/corpus/cls/seed/', 'seed_{}_test_seen_index.npy'.format(
+        self.dataset.test_seen_index = np.load(osp.join(current_path, '..', 'dataset/corpus/cls/seed/', 'seed_{}_test_seen_index.npy'.format(
             self.param_dict['seed']
         )))
-        self.dataset.test_unseen_index = np.load(osp.join(current_path, 'dataset/corpus/cls/seed/', 'seed_{}_test_unseen_index.npy'.format(
+        self.dataset.test_unseen_index = np.load(osp.join(current_path, '..', 'dataset/corpus/cls/seed/', 'seed_{}_test_unseen_index.npy'.format(
             self.param_dict['seed']
         )))
 
